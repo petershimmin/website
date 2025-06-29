@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Shimmin for Isle of Man | 2026 General Election</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .issue-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Announcement Bar -->
+    <div class="bg-blue-900 text-white text-center py-2 px-4">
+        <p class="text-sm md:text-base">🗳️ Election Day: 23rd September 2026 • Early voting available from 16th September</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <img class="h-10 w-auto" src="https://via.placeholder.com/50x50?text=PS" alt="Peter Shimmin Logo">
+                        <span class="ml-2 text-xl font-bold text-blue-900">Peter Shimmin</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#issues" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Key Issues</a>
+                    <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">About Peter</a>
+                    <a href="#news" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">News</a>
+                    <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                    <a href="#donate" class="ml-4 px-4 py-2 btn-primary rounded-md text-sm font-medium text-white">Donate</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#issues" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Key Issues</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About Peter</a>
+                <a href="#news" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">News</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+                <a href="#donate" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">A Fresh Vision for the Isle of Man</h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">Peter Shimmin is standing for election to bring positive change, economic growth, and community-focused leadership to our island.</p>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="#volunteer" class="px-6 py-3 btn-primary rounded-md text-lg font-medium text-center">Volunteer</a>
+                        <a href="#issues" class="px-6 py-3 bg-white text-blue-900 rounded-md text-lg font-medium text-center hover:bg-gray-100">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center animate-fade-in">
+                    <img src="https://via.placeholder.com/500x600?text=Peter+Shimmin" alt="Peter Shimmin" class="rounded-lg shadow-2xl border-4 border-white h-auto w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Issues Section -->
+    <!-- ... rest of your content ... -->
+
+    <!-- Footer -->
+    <!-- ... -->
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if(!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-fade-in');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if(elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        // Initial check in case elements are already in view
+        animateOnScroll();
+    </script>
+</body>
+</html>
